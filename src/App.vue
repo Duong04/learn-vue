@@ -1,17 +1,29 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import { ref, computed } from 'vue';
+  import HelloWorld from './components/HelloWorld.vue';
+  const name = 'Đường';
+  const rawHtml = '<span style="color: red;">Red</span>';
+  const count = ref(0);
+  const id = 'button-id';
+
+  const isCheck = false;
+
+  const bidings = {
+    id: 'button-id',
+    class: 'btn',
+    style: {
+      backgroundColor: 'green',
+      color: 'blue'
+    }
+  }
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <h1>Hello world!</h1>
+    <h3>Nguyễn Thành {{name}}</h3>
+    <h5>Color is <span v-html="rawHtml"></span></h5>
+    <button :disabled="isCheck" v-bind="bidings" @click="count++">Click</button>
+    <h1>{{count}}</h1>
 </template>
 
 <style scoped>
