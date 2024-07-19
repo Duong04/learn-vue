@@ -6,7 +6,7 @@ body {
 
 header {
     width: 400px;
-    background-color: #14db7e;
+    background-color: #4fc08d;
     color: #fff;
     border-radius: 10px;
     height: 150px;
@@ -18,7 +18,7 @@ header {
 #user-goal {
     width: 400px;
     box-shadow: 0 0 8px #ccc;
-    color: #14db7e;
+    color: #4fc08d;
     border-radius: 10px;
     height: auto;
     padding: 20px 0;
@@ -33,14 +33,14 @@ header {
     text-align: center;
     width: 90%;
     padding: 7px;
-    border-bottom: 2px solid #14db7e;
+    border-bottom: 2px solid #4fc08d;
 }
 
 #user-goal p {
     text-align: center;
     padding: 5px;
     width: 90%;
-    border: 6px solid #14db7e;
+    border: 6px solid #4fc08d;
     border-radius: 30px;
 }
 
