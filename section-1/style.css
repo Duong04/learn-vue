@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 400px;
+    background-color: #14db7e;
+    color: #fff;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-goal {
+    width: 400px;
+    box-shadow: 0 0 8px #ccc;
+    color: #14db7e;
+    border-radius: 10px;
+    height: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#user-goal h1 {
+    text-align: center;
+    width: 90%;
+    padding: 7px;
+    border-bottom: 2px solid #14db7e;
+}
+
+#user-goal p {
+    text-align: center;
+    padding: 5px;
+    width: 90%;
+    border: 6px solid #14db7e;
+    border-radius: 30px;
+}
+
+
+
+

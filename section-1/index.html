@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="module" src="./app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vue Course</h1>
+    </header>
+    <section id="user-goal">
+        <h1>My Course Goal</h1>
+        <!-- <p v-html="outputGoal()"></p> -->
+        <p>{{outputGoal()}}</p>
+        <p>My <a v-bind:href="linkUrl" target="_blank">Github</a></p>
+    </section>
+</body>
+</html>
