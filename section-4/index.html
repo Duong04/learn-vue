@@ -30,8 +30,24 @@
             <section class="bg-info p-3 m-3 text-center text-light">
                 <h2>Bind attribute</h2>
                 <hr>
-                <img :src="image" alt="" class="img-thumbnail">
+                <img :src="image" alt="" class="img-thumbnail d-block mx-auto mb-2">
                 <a :href="linkHref" class="btn btn-success">Hello world</a>
+            </section>
+            <section class="bg-success p-3 m-3 text-center text-light">
+                <h2>Method</h2>
+                <hr>
+                <p>Tài hay xỉu: {{ render() }}</p>
+            </section>
+            <section class="bg-warning p-3 m-3 text-center text-light">
+                <h2>Raw Html</h2>
+                <hr>
+                <p v-html="message"></p>
+            </section>
+            <section class="bg-primary p-3 m-3 text-center text-light">
+                <h2>Events</h2>
+                <hr>
+                <button @click="count++" class="btn btn-info">Click me</button>
+                <h5>{{ count }}</h5>
             </section>
         </div>
         <script
